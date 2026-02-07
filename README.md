@@ -1,7 +1,7 @@
 
-# Antigravity Attendance Tracker
+# GVP Attendance Tracker
 
-A futuristic, "Antigravity" themed student attendance and performance tracker built with React, Tailwind CSS, and Framer Motion.
+A futuristic, A themed student attendance and performance tracker built with React, Tailwind CSS, and Framer Motion.
 
 ## Features
 
@@ -37,4 +37,5 @@ A futuristic, "Antigravity" themed student attendance and performance tracker bu
 - `src/App.jsx`: Main application logic and UI components.
 - `src/index.css`: Global styles, Tailwind directives, and custom animations.
 - `tailwind.config.js`: Tailwind configuration for custom colors and animations.
+
 
