@@ -1,41 +1,91 @@
+# 🎓 Academic Attendance Portal
+### GVP AI Hackathon 2026 Submission
 
-# GVP Attendance Tracker
+A modern, secure, and efficient attendance tracking system designed for educational institutions. This application streamlines the attendance process using **QR Codes** and **Real-Time Role-Based Dashboards**, eliminating manual paperwork.
 
-A futuristic, A themed student attendance and performance tracker built with React, Tailwind CSS, and Framer Motion.
+![Status](https://img.shields.io/badge/Status-Complete-success)
+![Tech](https://img.shields.io/badge/Tech-React_%7C_Tailwind-blue)
 
-## Features
+---
 
-- **Antigravity UI**: Deep space dark mode, glassmorphism, and floating card animations.
-- **Student Management**: Add new students with Roll No, Name, and Semester.
-- **Attendance Tracking**: Mark attendance and automatically calculate percentages.
-- **Performance Analytics**: Enter marks and get auto-assigned performance labels (Good, Average, Needs Improvement).
-- **Smart Warnings**: Visual cues for attendance shortage (<75%).
+## 🚀 Key Features
 
-## Tech Stack
+### 👨‍🏫 For Teachers
+*   **Secure Login**: Dedicated portal for faculty.
+*   **Generate Sessions**: Create unique, time-bound attendance sessions instantly.
+*   **QR Code Display**: Projects a large QR Code (and numeric code) for students to scan.
+*   **Live Monitoring**: See the number of active students and attendance logs in real-time.
+*   **Student Management**: Add, remove, and view student profiles and attendance percentages.
 
-- React (Vite)
-- Tailwind CSS
-- Framer Motion
-- Lucide React
+### 👨‍🎓 For Students
+*   **Easy Access**: Login with Roll Number.
+*   **Quick Check-in**: Mark attendance by entering the unique session code displayed by the teacher.
+*   **Performance Tracking**: View personal attendance history and shortage warnings (<75%).
+*   **Mobile Friendly**: Fully responsive design for use on phones or laptops.
 
-## How to Run
+---
 
-1.  Install dependencies (if not already installed):
+## 🛠️ How to Run
+
+### Option 1: Quick Start (Standalone) ⚡
+We have compiled the entire application into a **single HTML file** for easy portability and testing. No installation required!
+
+1.  Navigate to the root folder.
+2.  Open **`attendance_system.html`** in any modern web browser (Chrome, Edge, Firefox).
+3.  The app will load instantly with all features active.
+
+### Option 2: Developer Mode (Source Code) 👨‍💻
+If you want to edit the source code or build the React project:
+
+1.  Ensure **Node.js** is installed.
+2.  Open a terminal in the project folder.
+3.  Run the following commands:
     ```bash
     npm install
-    ```
-
-2.  Start the development server:
-    ```bash
     npm run dev
     ```
+4.  Open the local server URL (usually `http://localhost:5173`).
 
-3.  Open [http://localhost:5173](http://localhost:5173) in your browser.
+---
 
-## Project Structure
+## 🔐 Demo Credentials
 
-- `src/App.jsx`: Main application logic and UI components.
-- `src/index.css`: Global styles, Tailwind directives, and custom animations.
-- `tailwind.config.js`: Tailwind configuration for custom colors and animations.
+To test the system efficiently, use these pre-configured accounts:
 
+| Role | Username / Roll No | Password | Capabilities |
+| :--- | :--- | :--- | :--- |
+| **Teacher** | `admin` | `123` | Create Sessions, Manage Students |
+| **Student** | `101` | `123` | Mark Attendance, View Stats |
+| **Student** | `102` | `123` | Mark Attendance, View Stats |
 
+> **Note**: Data is persisted in your browser's **LocalStorage**. If you refresh the page, your added students and attendance records remain saved!
+
+---
+
+## 💻 Tech Stack
+
+*   **Frontend Library**: React 18
+*   **Styling**: Tailwind CSS (Utility-first framework)
+*   **Icons**: Lucide React
+*   **Utilities**: QR Code Generation, LocalStorage DB Simulation
+*   **Font**: Inter (Google Fonts)
+
+---
+
+## 📝 Project Structure
+
+```
+GVP_AI_HACKATHON_2026/
+├── attendance_system.html  # 🌟 RUN THIS FILE (Standalone App)
+├── src/
+│   ├── components/         # React Components (Auth, Dashboards)
+│   ├── utils/              # Database Logic (db.js)
+│   ├── App.jsx             # Main Entry Point
+│   └── index.css           # Tailwind Styles
+├── public/                 # Static Assets
+└── README.md               # Documentation
+```
+
+---
+
+*Verified for GVP AI Hackathon 2026*
